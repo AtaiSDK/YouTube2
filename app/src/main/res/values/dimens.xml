@@ -13,4 +13,10 @@
     <dimen name="_40dp">40dp</dimen>
     <dimen name="_6dp">6dp</dimen>
     <dimen name="_10dp">10dp</dimen>
+    <dimen name="view_height">56dp</dimen>
+    <dimen name="iv_wight">240dp</dimen>
+    <dimen name="iv_height">276dp</dimen>
+    <dimen name="check_btn_width">328dp</dimen>
+    <dimen name="check_btn_height">40dp</dimen>
+    <dimen name="margin_btn">40dp</dimen>
 </resources>

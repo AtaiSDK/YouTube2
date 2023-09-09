@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="16dp"
     android:orientation="vertical">
 
@@ -70,64 +70,6 @@
         app:layout_constraintStart_toEndOf="@id/card_view"
         app:layout_constraintTop_toBottomOf="@id/tv_text1" />
 
-
-
-    <!--    <ImageView-->
-<!--        android:id="@+id/image_view"-->
-<!--        android:layout_width="120dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:background="@color/material_dynamic_neutral_variant40"-->
-<!--        android:src="@drawable/corner_image"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <View-->
-<!--        android:layout_width="120dp"-->
-<!--        android:layout_height="24dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="72dp"-->
-<!--        android:background="@drawable/transparent_shape"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <TextView-->
-<!--        android:layout_width="40sp"-->
-<!--        android:layout_height="16dp"-->
-<!--        android:layout_marginStart="70dp"-->
-<!--        android:layout_marginTop="73dp"-->
-<!--        android:text="playlist"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="12sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-
-<!--        />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tv_text1"-->
-<!--        android:layout_width="200sp"-->
-<!--        android:layout_height="40sp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="25dp"-->
-<!--        android:text="Meet Nutritional Needs"-->
-<!--        android:textColor="@color/green"-->
-<!--        android:textSize="16dp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintStart_toEndOf="@id/image_view"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tv_text2"-->
-<!--        android:layout_width="84dp"-->
-<!--        android:layout_height="16dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:text="32 video series"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="12dp"-->
-<!--        app:layout_constraintStart_toEndOf="@id/image_view"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/tv_text1" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

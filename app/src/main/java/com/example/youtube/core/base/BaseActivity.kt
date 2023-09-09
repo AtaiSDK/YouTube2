@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseActivity<VB: ViewBinding,
-                            VM: ViewModel
-                            > : AppCompatActivity() {
+abstract class BaseActivity<VB : ViewBinding,
+        VM : ViewModel
+        > : AppCompatActivity() {
     protected lateinit var binding: VB
     protected abstract var viewModel: VM
 
@@ -30,6 +30,7 @@ abstract class BaseActivity<VB: ViewBinding,
         initListener()
 
     }
+
     open fun initListener() {}
 
     open fun initLiveData() {}

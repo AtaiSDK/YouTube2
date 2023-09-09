@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitService {
 
-    fun getApiService(): YouTubeApiService{
+    fun getApiService(): YouTubeApiService {
 
         val intercepter = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 

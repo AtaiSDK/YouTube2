@@ -1,8 +1,10 @@
 package com.example.youtube.ui.main
 
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.youtube.core.base.BaseActivity
 import com.example.youtube.core.base.PlaylistAdapter
+import com.example.youtube.core.data.model.Resource
 import com.example.youtube.databinding.ActivityMainBinding
 
 class PlaylistsActivity : BaseActivity<ActivityMainBinding, PlaylistsViewModel>() {
@@ -15,8 +17,20 @@ class PlaylistsActivity : BaseActivity<ActivityMainBinding, PlaylistsViewModel>(
 
     override fun initLiveData() {
         super.initLiveData()
-        viewModel.getPlayList(10).observe(this) {
-            adapter.setListModel(it)
+        viewModel.getPlayList().observe(this) {
+            when (it.status) {
+                Resource.Status.SUCCESS -> {
+                    it.data?.items
+                    adapter.setListModel(it)
+                }
+                Resource.Status.ERROR -> {
+                    Toast.makeText(this, "error Status", Toast.LENGTH_SHORT)
+                }
+                Resource.Status.LOADING -> {
+
+                }
+
+            }
         }
     }
 
@@ -24,11 +38,12 @@ class PlaylistsActivity : BaseActivity<ActivityMainBinding, PlaylistsViewModel>(
         super.initView()
         viewModel = ViewModelProvider(this)[PlaylistsViewModel::class.java]
         binding.recyclerView.adapter = adapter
-        viewModel.getPlayList(1)
+        viewModel.getPlayList()
     }
 
     override fun checkInternetConnection() {
         super.checkInternetConnection()
+
     }
 
     override fun initViewModel(): PlaylistsViewModel {
